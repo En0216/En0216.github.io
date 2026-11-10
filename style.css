@@ -1,0 +1,171 @@
+
+/* 基本設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, "Noto Sans TC", sans-serif;
+    background-color: #f8f7f2;
+    color: #405044;
+    line-height: 1.7;
+}
+
+/* 導覽列 */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #e4e9df;
+}
+
+nav h2 {
+    color: #526b55;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #405044;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #9aab8b;
+}
+
+/* 各區塊 */
+section {
+    padding: 90px 12%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #526b55;
+}
+
+/* 首頁 */
+#home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9eee5;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+#home p {
+    letter-spacing: 3px;
+}
+
+.main-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background-color: #718b72;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.main-btn:hover {
+    background-color: #526b55;
+}
+
+/* 關於我 */
+#about {
+    background-color: #f8f7f2;
+}
+
+#moreBtn, .interestBtn {
+    margin: 15px 5px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 20px;
+    background-color: #718b72;
+    color: white;
+    cursor: pointer;
+}
+
+#moreBtn:hover, .interestBtn:hover {
+    background-color: #526b55;
+}
+
+#moreText {
+    display: none;
+    margin-top: 20px;
+}
+
+/* 技能 */
+#skills {
+    background-color: #e9eee5;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+}
+
+/* 興趣 */
+#interests {
+    background-color: #f8f7f2;
+}
+
+#interestText {
+    margin: 20px 0;
+    min-height: 30px;
+}
+
+/* 頁尾 */
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #526b55;
+    color: white;
+}
+
+/* 手機版 */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 65px 8%;
+    }
+}
