@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En0216 | Personal Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <!-- 導覽列 -->
+    <nav>
+        <h2>En0216.</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#interests">Interests</a></li>
+        </ul>
+    </nav>
+
+    <!-- 首頁 -->
+    <section id="home">
+        <p>WELCOME TO MY WEBSITE</p>
+        <h1>Hello, I'm En0216!</h1>
+        <h3>Welcome to my personal website.</h3>
+        <a href="#about" class="main-btn">Get to Know Me</a>
+    </section>
+
+    <!-- 關於我 -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm a university student interested in
+            technology, programming and medical informatics.
+            I enjoy learning new things and exploring different fields.
+        </p>
+
+        <button id="moreBtn">Read More</button>
+
+        <div id="moreText">
+            <p>
+                I hope to improve my programming skills
+                and create useful applications through technology.
+            </p>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">jQuery</div>
+            <div class="skill">Git</div>
+        </div>
+    </section>
+
+    <!-- 興趣 -->
+    <section id="interests">
+        <h2>My Interests</h2>
+        <p id="interestText">Choose a button to explore my interests!</p>
+
+        <button class="interestBtn" data-interest="I enjoy playing guitar and listening to music.">
+            Music & Guitar
+        </button>
+
+        <button class="interestBtn" data-interest="I enjoy learning programming and exploring technology.">
+            Programming
+        </button>
+
+        <button class="interestBtn" data-interest="I am interested in medical informatics and healthcare technology.">
+            Medical Technology
+        </button>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>© 2026 En0216 | My Personal Website</p>
+    </footer>
+
+    <!-- jQuery 功能 -->
+    <script src="script.js"></script>
+
+</body>
+</html>
