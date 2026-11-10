@@ -33,4 +33,23 @@ $(document).ready(function() {
         }
     });
 
+        // 功能四：使用 Ajax 取得外部資料
+    $("#ajaxBtn").click(function() {
+        $.ajax({
+            url: "https://jsonplaceholder.typicode.com/posts/1",
+            method: "GET",
+
+            success: function(data) {
+                $("#ajaxResult").html(
+                    "<h4>" + data.title + "</h4>" +
+                    "<p>" + data.body + "</p>"
+                );
+            },
+
+            error: function() {
+                $("#ajaxResult").text("資料取得失敗，請稍後再試。");
+            }
+        });
+    });
+
 });
